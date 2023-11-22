@@ -4,8 +4,7 @@
 */
 
 interface KeyValuePair {
-  key;
-  value;
+	[key: string]: string | number;
 }
 
 export {};
