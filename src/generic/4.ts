@@ -1,8 +1,10 @@
 /*
   Використовуйте generics та інтерфейси, щоб виправити помилку в наступних класах:
 */
-
-class Component<T extends Animal> {
+interface Animal {
+	title: string;
+}
+class Component<T> {
 	constructor(public props: T) {}
 }
 
@@ -13,7 +15,5 @@ class Page extends Component<Animal> {
 }
 
 export {};
-interface Animal {
-	title: string | number;
-}
+
 const a = new Page({ title: 'a' });

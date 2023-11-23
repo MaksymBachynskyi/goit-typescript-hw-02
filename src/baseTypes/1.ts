@@ -5,7 +5,7 @@ let name: string = 'Max';
 let toggle: boolean = true;
 let empty: null = null;
 let notInitialize: any;
-let callback = (a: string | number) => {
+let callback = (a: string | number):number|string => {
 	if (typeof a === 'string') {
 		return 100 + a;
 	} else {
